@@ -27,7 +27,7 @@ warnings.filterwarnings("ignore")
 try:
     from retinaface import RetinaFace
     RETINAFACE_AVAILABLE = True
-    print("RetinaFace available — 5-point face alignment enabled for ViT.")
+    # print("RetinaFace available — 5-point face alignment enabled for ViT.")
 except ImportError:
     print("WARNING: RetinaFace not found. ViT accuracy will be degraded.")
     RETINAFACE_AVAILABLE = False
