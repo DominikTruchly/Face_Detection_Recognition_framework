@@ -1,0 +1,50 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Model weights (too large for git) ─────────────────────────────────────────
+*.pth
+*.onnx
+*.pkl
+weights/
+
+# ── DeepFace / InsightFace model cache ────────────────────────────────────────
+.deepface/
+insightface/
+models/
+
+# ── Results (generated at runtime) ────────────────────────────────────────────
+results/
+
+# ── Datasets (too large) ──────────────────────────────────────────────────────
+datasets/
+drones/
+
+# ── Misc scratch files ────────────────────────────────────────────────────────
+aligment_test.txt
+email.txt
+pairs.csv
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+archiv/
