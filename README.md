@@ -2,25 +2,6 @@
 
 The source code is published under the MIT license. The repository contains the following main files and directories:
 
-```
-code/
-├── src/
-│   ├── evaluation.py
-│   ├── metrics.py
-│   ├── detection.py
-│   ├── recognizer_deepface.py
-│   ├── recognizer_insightface.py
-│   ├── recognizer_swin.py
-│   └── recognizer_vit.py
-├── scripts/
-│   ├── prepare_cfp.py
-│   ├── generate_agedb_protocol.py
-│   ├── finetune_classifier_head.py
-│   └── recalculate_metrics.py
-├── run_detection.py
-├── run_verification.py
-└── run_identification.py
-```
 
 ## Model Weights
 

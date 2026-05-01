@@ -33,6 +33,7 @@ drones/
 aligment_test.txt
 email.txt
 pairs.csv
+!test_images/verification/pairs.csv
 
 # ── OS ────────────────────────────────────────────────────────────────────────
 .DS_Store
