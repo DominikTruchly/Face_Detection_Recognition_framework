@@ -1,28 +1,37 @@
-\chapter{An appendix}
-The created source code will be publicly available in the IS under the MIT license. The repository contains the following main files and directories:
-\begin{figure}[htbp]
-\makebox[0pt][c]{%
-    \begin{minipage}{0.5\textwidth}
-    \dirtree{%
-    .1 code/.
-    .2 src/.
-    .3 evaluation.py.
-    .3 metrics.py.
-    .3 detection.py.
-    .3 recognizer\_deepface.py.
-    .3 recognizer\_insightface.py.
-    .3 recognizer\_swin.py.
-    .3 recognizer\_vit.py.
-    .2 scripts/.
-    .3 prepare\_cfp.py.
-    .3 generate\_agedb\_protocol.py.
-    .3 finetune\_classifier\_head.py.
-    .3 recalculate\_metrics.py.
-    .2 run\_detection.py.
-    .2 run\_verification.py.
-    .2 run\_identification.py.
-    }
-    \end{minipage}%
-}
-\caption{Directory structure of the published code repository.}
-\end{figure}
+# Face Detection & Recognition Framework
+
+The source code is published under the MIT license. The repository contains the following main files and directories:
+
+```
+code/
+├── src/
+│   ├── evaluation.py
+│   ├── metrics.py
+│   ├── detection.py
+│   ├── recognizer_deepface.py
+│   ├── recognizer_insightface.py
+│   ├── recognizer_swin.py
+│   └── recognizer_vit.py
+├── scripts/
+│   ├── prepare_cfp.py
+│   ├── generate_agedb_protocol.py
+│   ├── finetune_classifier_head.py
+│   └── recalculate_metrics.py
+├── run_detection.py
+├── run_verification.py
+└── run_identification.py
+```
+
+## Model Weights
+
+| Model | Source |
+|-------|--------|
+| ArcFace, Facenet512, VGG-Face | Downloaded automatically by DeepFace on first use |
+| InsightFace (buffalo_l) | Downloaded automatically by InsightFace on first use |
+| SwinFace (`SwinFace_MS1MV2.pth`, ~300 MB) | [Google Drive](https://drive.google.com/file/d/1fi4IuuFV8NjnWm-CufdrhMKrkjxhSmjx) — place in `weights/` |
+
+## Colab Demo
+
+An interactive demo notebook (`colab_demo.ipynb`) is included. Open it in Google Colab to run face detection, verification, and identification on sample images — no local setup required.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DominikTruchly/Face_Detection_Recognition_framework/blob/main/colab_demo.ipynb)
