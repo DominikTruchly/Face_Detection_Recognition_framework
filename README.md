@@ -42,7 +42,6 @@ scripts/
   finetune_classifier_head.py  # Fine-tune a timm ViT classifier head
   recalculate_metrics.py       # Recompute metrics from existing raw_results.csv
   recalculate_detection_metrics.py  # Recompute detection metrics from raw_predictions.csv
-archiv/                   # Older/experimental scripts (not part of main pipeline)
 ```
 
 ## Usage
