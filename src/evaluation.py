@@ -1,3 +1,11 @@
+"""
+src/evaluation.py
+------------------
+Benchmark runner for face verification tasks.
+Reads a pairs protocol (LFW CSV or generic CSV), calls the active recognizer on
+every pair, writes incremental results to raw_results.csv (resumable), and
+delegates metric calculation to MetricsCalculator.
+"""
 import os
 import time
 import pandas as pd
